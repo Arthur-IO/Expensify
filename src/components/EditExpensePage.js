@@ -16,7 +16,7 @@ export class EditExpensePage extends React.Component {
         this.props.history.push("/")
     }
 
-    onClick = (e) => {
+    onClick = () => {
         this.props.removeExpense({ id: this.props.expense.id })
         this.props.history.push("/")
     }
@@ -51,4 +51,4 @@ const mapDispatchToProps = (dispatch) => ({
 })
 
 // Connects this component to the redux store with the redux state passed in as props
-export default connect(mapStateToProps, mapDispatchToProps())(EditExpensePage);
+export default connect(mapStateToProps, mapDispatchToProps)(EditExpensePage);

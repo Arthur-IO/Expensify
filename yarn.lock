@@ -277,7 +277,7 @@ async@^2.1.2, async@^2.1.5:
   dependencies:
     lodash "^4.14.0"
 
-async@^2.1.4:
+async@^2.1.4, async@^2.4.1:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
   integrity sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
@@ -2403,6 +2403,16 @@ extglob@^0.3.1:
   resolved "https://registry.yarnpkg.com/extglob/-/extglob-0.3.2.tgz#2e18ff3d2f49ab2765cec9023f011daa8d8349a1"
   dependencies:
     is-extglob "^1.0.0"
+
+extract-text-webpack-plugin@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/extract-text-webpack-plugin/-/extract-text-webpack-plugin-3.0.0.tgz#90caa7907bc449f335005e3ac7532b41b00de612"
+  integrity sha1-kMqnkHvESfM1AF46x1MrQbAN5hI=
+  dependencies:
+    async "^2.4.1"
+    loader-utils "^1.1.0"
+    schema-utils "^0.3.0"
+    webpack-sources "^1.0.1"
 
 extsprintf@1.0.2:
   version "1.0.2"
