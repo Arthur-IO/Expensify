@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux'
 
 import ExpenseForm from "./ExpenseForm";
-import {addExpense} from "../actions/expenses";
+import {startAddExpense} from "../actions/expenses";
 
 // Adds an expense to the expenses list
 
@@ -10,7 +10,7 @@ export class AddExpensePage extends React.Component {
 
     onSubmit = (expense) => {
         // Dispatches an event to the redux store
-        this.props.addExpense(expense)
+        this.props.startAddExpense(expense)
 
         // Redirects the user back to the home-page
         this.props.history.push('/')
@@ -31,7 +31,7 @@ export class AddExpensePage extends React.Component {
 
 // Maps dispatch to the properties of this component
 const mapDispatchToProps = (dispatch) => ({
-    addExpense: (expense) => dispatch(addExpense(expense))
+    startAddExpense: (expense) => dispatch(startAddExpense(expense))
 })
 
 // Connects this component to the redux store with no props

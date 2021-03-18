@@ -8,6 +8,7 @@ import getVisibleExpenses from './selectors/expenses'
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css'
+import './firebase/firebase'
 
 // Adds the redux store to the application
 const store = configureStore();
