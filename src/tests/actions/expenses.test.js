@@ -5,11 +5,14 @@ import {
     editExpense,
     removeExpense,
     setExpenses,
-    startAddExpense,
+    startAddExpense, startRemoveExpense,
     startSetExpenses
 } from "../../actions/expenses";
 import expenses from "../fixtures/expenses";
 import database from "../../firebase/firebase";
+
+const middlewares = [thunk]
+const createMockStore = configureMockStore(middlewares)
 
 beforeEach((done) => {
     const expensesData = {}
@@ -52,9 +55,6 @@ test('should setup add expense action object with provided values', () => {
         expense: expenses[0]
     })
 })
-
-const middlewares = [thunk]
-const createMockStore = configureMockStore(middlewares)
 
 test('should add expense to database and store', (done) => {
     const store = createMockStore({})
@@ -132,4 +132,25 @@ test('should set expenses to database and store', (done) => {
         })
         done()
     })
+})
+
+test('should remove expense from database and store', (done) => {
+    const store = createMockStore({})
+
+    const id = expenses[0].id
+
+    store
+        .dispatch(startRemoveExpense({ id }))
+        .then(() => {
+            const actions = store.getActions()
+            expect(actions[0]).toEqual({
+                type: 'REMOVE_EXPENSE',
+                id
+            })
+            return database.ref(`expenses/${id}`).once('value')
+        }).then(snapshot => {
+            expect(snapshot.val()).toBeFalsy()
+            done()
+    })
+
 })

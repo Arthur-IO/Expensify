@@ -5,18 +5,18 @@ import expenses from "../fixtures/expenses";
 
 const expense = expenses[0]
 
-let editExpense, removeExpense, history, wrapper
+let editExpense, startRemoveExpense, history, wrapper
 
 beforeEach(() => {
     editExpense = jest.fn()
-    removeExpense = jest.fn()
+    startRemoveExpense = jest.fn()
     history = { push: jest.fn() }
     wrapper = shallow(
         <EditExpensePage
             history={history}
             expense={expenses[0]}
             editExpense={editExpense}
-            removeExpense={removeExpense}
+            startRemoveExpense={startRemoveExpense}
         />
     )
 })
@@ -34,5 +34,5 @@ test('should handle onSubmit', () => {
 test('should handle onClick', () => {
     wrapper.find('button').at(0).simulate('click', {})
     expect(history.push).toHaveBeenLastCalledWith('/')
-    expect(removeExpense).toHaveBeenCalledWith({ id: expense.id })
+    expect(startRemoveExpense).toHaveBeenCalledWith({ id: expense.id })
 })

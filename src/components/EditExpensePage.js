@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux'
 import ExpenseForm from "./ExpenseForm";
-import {editExpense, removeExpense} from "../actions/expenses";
+import {editExpense, startRemoveExpense} from "../actions/expenses";
 
 // A page where the user can edit a specific expense in their expense list
 
@@ -17,7 +17,7 @@ export class EditExpensePage extends React.Component {
     }
 
     onClick = () => {
-        this.props.removeExpense({ id: this.props.expense.id })
+        this.props.startRemoveExpense({ id: this.props.expense.id })
         this.props.history.push("/")
     }
 
@@ -47,7 +47,7 @@ const mapStateToProps = (state, props) => {
 // Maps the dispatch function to the properties of this component
 const mapDispatchToProps = (dispatch) => ({
     editExpense: (id, updates) => dispatch(editExpense(id, updates)),
-    removeExpense: ({ id }) => dispatch(removeExpense({ id }))
+    startRemoveExpense: ({ id }) => dispatch(startRemoveExpense({ id }))
 })
 
 // Connects this component to the redux store with the redux state passed in as props
