@@ -12,8 +12,6 @@ import 'react-dates/lib/css/_datepicker.css'
 // Adds the redux store to the application
 const store = configureStore();
 
-console.log(1)
-
 // The root of the application
 const jsx = (
     <div>

@@ -2,9 +2,22 @@
 
 exports[`should render ExpenseList with empty message 1`] = `
 <div>
-  <p>
-    No expenses
-  </p>
+  <ExpenseListItem
+    amount={150}
+    createdAt={1}
+    description="Chocolate"
+    id={13472}
+    key="13472"
+    note="Twix"
+  />
+  <ExpenseListItem
+    amount={1000}
+    createdAt={15}
+    description="Beer"
+    id={13471}
+    key="13471"
+    note="Modelo"
+  />
 </div>
 `;
 
