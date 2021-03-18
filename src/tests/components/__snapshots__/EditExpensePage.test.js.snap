@@ -5,11 +5,11 @@ exports[`should render EditExpensePage correctly 1`] = `
   <ExpenseForm
     expense={
       Object {
-        "amount": 150,
-        "createdAt": 1,
-        "description": "Chocolate",
-        "id": 13472,
-        "note": "Twix",
+        "amount": 1000,
+        "createdAt": 15,
+        "description": "Beer",
+        "id": "13471",
+        "note": "Modelo",
       }
     }
     onSubmit={[Function]}

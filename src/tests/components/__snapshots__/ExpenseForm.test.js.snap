@@ -118,19 +118,19 @@ exports[`should render ExpensesForm with props 1`] = `
       onChange={[Function]}
       placeholder="Description"
       type="text"
-      value="Chocolate"
+      value="Beer"
     />
     <input
       onChange={[Function]}
       placeholder="Amount"
       type="text"
-      value="1.5"
+      value="10"
     />
     <SingleDatePicker
       anchorDirection="left"
       customCloseIcon={null}
       customInputIcon={null}
-      date={"1970-01-01T00:00:00.001Z"}
+      date={"1970-01-01T00:00:00.015Z"}
       daySize={39}
       disabled={false}
       displayFormat={[Function]}
@@ -205,7 +205,7 @@ exports[`should render ExpensesForm with props 1`] = `
     <textarea
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
-      value="Twix"
+      value="Modelo"
     />
     <button>
       Add Expense

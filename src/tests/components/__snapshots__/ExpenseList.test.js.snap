@@ -3,20 +3,20 @@
 exports[`should render ExpenseList with empty message 1`] = `
 <div>
   <ExpenseListItem
-    amount={150}
-    createdAt={1}
-    description="Chocolate"
-    id={13472}
-    key="13472"
-    note="Twix"
-  />
-  <ExpenseListItem
     amount={1000}
     createdAt={15}
     description="Beer"
-    id={13471}
+    id="13471"
     key="13471"
     note="Modelo"
+  />
+  <ExpenseListItem
+    amount={150}
+    createdAt={1}
+    description="Chocolate"
+    id="13472"
+    key="13472"
+    note="Twix"
   />
 </div>
 `;
@@ -24,20 +24,20 @@ exports[`should render ExpenseList with empty message 1`] = `
 exports[`should render ExpenseList with expenses 1`] = `
 <div>
   <ExpenseListItem
-    amount={150}
-    createdAt={1}
-    description="Chocolate"
-    id={13472}
-    key="13472"
-    note="Twix"
-  />
-  <ExpenseListItem
     amount={1000}
     createdAt={15}
     description="Beer"
-    id={13471}
+    id="13471"
     key="13471"
     note="Modelo"
+  />
+  <ExpenseListItem
+    amount={150}
+    createdAt={1}
+    description="Chocolate"
+    id="13472"
+    key="13472"
+    note="Twix"
   />
 </div>
 `;

@@ -4,17 +4,17 @@ import moment from "moment";
 
 export default [
     {
-        id: 13472,
-        description: 'Chocolate',
-        amount: 150,
-        note: 'Twix',
-        createdAt: 1
-    },
-    {
-        id: 13471,
+        id: '13471',
         description: 'Beer',
         amount: 1000,
         note: 'Modelo',
         createdAt: 15
+    },
+    {
+        id: '13472',
+        description: 'Chocolate',
+        amount: 150,
+        note: 'Twix',
+        createdAt: 1
     }
 ]
