@@ -1,7 +1,7 @@
 # Expensify
 A web-application that tracks individual user expenses using modern frameworks and libraries.
 
-View the demo application [here](https://arthur-io-expensify.herokuapp.com) [Images](#images)
+View the demo application [here](https://arthur-io-expensify.herokuapp.com) [[Images]](#images)
 
 ### All frameworks
 - [React](https://reactjs.org/)
