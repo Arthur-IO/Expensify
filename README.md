@@ -24,7 +24,11 @@ View the demo application [here](https://arthur-io-expensify.herokuapp.com) [Ima
 - [Heroku](https://dashboard.heroku.com/apps)
   
 #### Images
+##### Login Page
 ![Application Login Page](https://i.gyazo.com/162e2dc60e2dd5f82440ccdf392e640f.jpg)
+##### Dashboard Page
 ![Application Dashboard Page](https://i.gyazo.com/241dfadfd95ee3f2f91049fb7f7662ac.png)
+##### Adding Expense Page
 ![Applicatioon Add Expense Page](https://i.gyazo.com/ac85d1860a31494dc047cdfbce96a88d.png)
+##### Editing Expense Page
 ![Applicatioon Edit Expense Page](https://i.gyazo.com/bc0787ad4c4b67035ced37d7e50629bc.png)
