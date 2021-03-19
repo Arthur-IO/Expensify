@@ -1,23 +1,32 @@
 import React from "react";
-import { connect } from "react-redux";
+import {connect} from "react-redux";
 import ExpenseListItem from "./ExpenseListItem";
 import selectExpenses from '../selectors/expenses'
 
 // A list of expense items
 
 export const ExpenseList = (props) => (
-    <div>
-        {
-            // Display 'no expenses' message when there are no expenses
-            props.expenses.length === 0 ? (
-                <p>No expenses</p>
-            ) : (
-                // The individual expense list items rendered
-                props.expenses.map(expense => {
-                    return <ExpenseListItem key={expense.id} {...expense} />
-                })
-            )
-        }
+    <div className={"content-container"}>
+        <div className={"list-header"}>
+            <div className={"show-for-mobile"}>Expenses</div>
+            <div className={"show-for-desktop"}>Expense</div>
+            <div className={"show-for-desktop"}>Amount</div>
+        </div>
+        <div className={"list-body"}>
+            {
+                // Display 'no expenses' message when there are no expenses
+                props.expenses.length === 0 ? (
+                    <div className={"list-item list-item--message"}>
+                        <span>No expenses</span>
+                    </div>
+                ) : (
+                    // The individual expense list items rendered
+                    props.expenses.map(expense => {
+                        return <ExpenseListItem key={expense.id} {...expense} />
+                    })
+                )
+            }
+        </div>
     </div>
 )
 
