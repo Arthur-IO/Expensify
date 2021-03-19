@@ -1,0 +1,15 @@
+.login-button {
+  border: transparent;
+  background: url("/images/google_login_normal.png") no-repeat;
+  width: 191px;
+  height: 46px;
+  outline: none;
+}
+
+.login-button:hover {
+  background: url("/images/google_login_focused.png") no-repeat;
+}
+
+.login-button:active {
+  background: url("/images/google_login_pressed.png") no-repeat;
+}
