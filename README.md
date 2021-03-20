@@ -6,6 +6,7 @@ View the demo application [here](https://arthur-io-expensify.herokuapp.com) [[Im
 ### All frameworks
 - [React](https://reactjs.org/)
 - [Redux](https://react-redux.js.org/)
+- [NodeJS](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
 - [Jest](https://jestjs.io/)
 
